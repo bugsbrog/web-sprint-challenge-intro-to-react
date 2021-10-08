@@ -80,16 +80,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-
+React JS is a User Interface Component Library. One of the problems it tries to solve is how to manage data without messing up the DOM or web browser. "The React team built a simple engine called the virtual DOM that interacts with the actual DOM for us. We tell the virtual DOM which elements and state (data) to render to the actual DOM, and it will do so. Beyond that, it will "react" when the state (data) in our app changes, and will update the DOM accordingly." 
 
 1. Describe component state.
 
+"setState() schedules an update to a component’s state object. When state changes, the component responds by re-rendering" (reactjs.org).
 
 
 1. Describe props.
 
-
+Props are objects and cannot be changed.
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
 
+A side effect is anything that affects something outside of the scope of the function. 
 
+You can sync effects with changes to state and props. You can do this by passing in a "dependency array" as the second argument.

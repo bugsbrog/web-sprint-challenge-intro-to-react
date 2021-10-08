@@ -13,7 +13,6 @@ const StyledCharacter = styled.div`
 
 const StyledName = styled.h1`
 font-size: 2rem;
-
 `
 const StyledBY = styled.h2`
 font-size: 1rem;
