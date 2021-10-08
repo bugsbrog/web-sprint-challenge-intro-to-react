@@ -3,6 +3,16 @@ import './App.css';
 import axios from 'axios';
 import { BASE_URL } from './constant';
 import Character from './components/Character';
+import styled from 'styled-components';
+
+const StyledBackground = styled.div`
+  background-size: cover;
+  padding: 50px;
+`
+
+const StyledHeader = styled.h1`
+  font-size: 4em;
+`
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -24,7 +34,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+      <StyledBackground>
       <Character characters={swCharacters}/>
+      </StyledBackground>
     </div>
   );
 }
